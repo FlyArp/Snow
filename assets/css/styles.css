@@ -23,13 +23,35 @@ a {	text-decoration: none; color: black;}
 .wrap {
 	position: relative;
 	height: 100vh;
-	min-height: 700px;
+	min-height: 450px;
 }
 
 /* Header */
 
 .header {
 	background-color: #fff;
+	/* background-color: transparent; */
+	transition: background-color .3s linear;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.header_transparent {
+	background-color: transparent;
+}
+
+.header__dark-logo {
+	position: absolute;
+	opacity: 0;
+	transition: opacity .3s linear;
+}
+
+.header__light-logo {
+	position: absolute;
+	opacity: 1;
+	transition: opacity .3s linear;
+
 }
 
 .header__content {
@@ -37,6 +59,10 @@ a {	text-decoration: none; color: black;}
 	justify-content: space-between;
 	padding: 35px 0;
 	align-items: center;
+}
+
+.header__logo {
+	position: relative;
 }
 
 .header__logo img {
@@ -56,6 +82,14 @@ a {	text-decoration: none; color: black;}
 
 .nav__item:hover {
 	color: #0e0e0e;
+}
+
+.nav__item_light {
+	color: #bfbfbf;
+}
+
+.nav__item_light:hover {
+	color: #fff;
 }
 
 .nav__social {
@@ -97,6 +131,12 @@ a {	text-decoration: none; color: black;}
 
 .burger__item::after {
 	top: 7px;
+}
+
+.burger__item_light,
+.burger__item_light::before,
+.burger__item_light::after {
+	background-color: #bfbfbf;
 }
 
 /* Bg-image */
@@ -309,7 +349,7 @@ a {	text-decoration: none; color: black;}
 /* Quotes */
 
 .quotes {
-	padding: 180px 0 110px;
+	/* padding: 180px 0 110px; */
 	text-align: center;
 	max-width: 770px;
 	margin: 0 auto;
@@ -328,6 +368,29 @@ a {	text-decoration: none; color: black;}
 	font-size: 14px;
 	font-weight: 500;
 	font-style: normal;
+}
+
+/* Owl-Carousel */
+
+.quote-block {
+	padding: 130px 15px 60px;
+}
+
+.owl-dots {
+	margin-top: 50px;
+	height: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.owl-carousel button.owl-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.25;
+  margin: 0 3px;
 }
 
 /* Parner */
@@ -734,12 +797,18 @@ a {	text-decoration: none; color: black;}
 
 	/* Quotes */
 
-	.quotes {
+	/* .quotes {
 		padding: 80px 0;
-	}
+	} */
 
 	.quotes__content {
 		margin-bottom: 25px;
+	}
+
+	/* Owl-carousel */
+
+	.quote-block {
+		padding: 80px 15px 40px;
 	}
 
 	/* Partner */
@@ -824,5 +893,85 @@ a {	text-decoration: none; color: black;}
 
 	.instagram__link:nth-child(4n) {
 		display: inline;
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+	/* Section */
+	.section {
+		padding: 35px 0;
+	}
+
+	/* Header */
+
+	.header__content {
+		padding: 25px 0;
+	}	
+
+	/* Head-section */
+
+	.head-section__subtitle {
+		font-size: 12px;
+	}
+	
+	.head-section__title {
+		font-size: 35px;
+	}
+
+	/* Features */
+
+	.features {
+		padding: 60px 0;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.features__item {
+		width: 230px;
+	}
+
+	.features__item + .features__item {
+		margin-top: 30px;
+	}
+
+	.features__item:nth-child(-n+2) {
+		margin-bottom: 0px;
+	}
+
+	/* Projects */
+	.projects__col {
+		width: 100%;
+	}
+
+	/* Quotes */
+
+	.quotes {
+		/* padding: 65px 0; */
+	}
+
+	/* Owl-carousel */
+
+	.owl-carousel {
+		/* padding: 80px 15px 40px; */
+	}
+
+	/* Partner */
+
+	.partner__item {
+		width: 33%;
+	}
+
+	/* Footer */
+	.footer {
+		padding-top: 40px;
+	}
+
+	/* Instagram */
+
+	.instagram {
+		padding-right: 0px;
+		/* margin: 0 auto; */
 	}
 }
