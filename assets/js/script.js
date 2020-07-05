@@ -42,7 +42,7 @@ $(function() {
 			addTransparent()
 		}
 		if (scrollPos1 < scrollOffset) {
-			if (scrollOffset >= 400 && scrollPos1 - scrollPos2 >= 100) {
+			if (scrollOffset >= 400 && scrollPos1 - scrollPos2 >= 50) {
 				$('.header').slideUp(400);
 				scrollPos1 = scrollOffset;
 				scrollPos2 = 0;
@@ -152,6 +152,18 @@ $(function() {
 		$('.owl-dot.active').animate({width: '10px', height: '10px', opacity: '1'}, { duration: 300, queue: false });
 	})
 
+	window.addEventListener('resize', () => {
+		 		console.log($('.burger').css('display'));
+
+  		let vh = window.innerHeight * 0.01;
+ 		document.documentElement.style.setProperty('--vh', `${vh}px`);
+ 		if ($('.nav-expand').css('display') === 'none' && $('.burger').css('display') === 'none') {
+ 			$('.nav-expand').css({display: 'block'});
+ 		} else {
+ 			$('.nav-expand').css({display: 'none'});
+ 		}
+	});
+
 })
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -159,8 +171,3 @@ let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-window.addEventListener('resize', () => {
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
