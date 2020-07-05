@@ -24,31 +24,34 @@
 						<img class="header__dark-logo" src="assets/images/header/logo.svg" alt="">
 						<img class="header__lignt-logo" src="assets/images/header/logo-light.svg" alt="">
 					</div>
-					<nav class="nav">
-						<a href="#" class="nav__item nav__item_light" data-scroll="#about">About</a>
-						<a href="#" class="nav__item nav__item_light" data-scroll="#projects">Projects</a>
-						<a href="#" class="nav__item nav__item_light" data-scroll="#blog">Blog</a>
-						<a href="#" class="nav__item nav__item_light" data-scroll="#contact">Contact</a>
+
+					<div class="nav-expand">
+						<nav class="nav">
+							<a href="#" class="nav__item nav__item_light" data-scroll="#about">About</a>
+							<a href="#" class="nav__item nav__item_light" data-scroll="#projects">Projects</a>
+							<a href="#" class="nav__item nav__item_light" data-scroll="#blog">Blog</a>
+							<a href="#" class="nav__item nav__item_light" data-scroll="#contact">Contact</a>
 
 
-						<div class="social nav__social">
-						<a href="#" class="social__item social__item_grey">
-							<i class="fab fa-facebook-f socal__item"></i>
-						</a>
-						<a href="#" class="social__item social__item_grey">
-							<i class="fab fa-twitter socal__item"></i>
-						</a>
-						<a href="#" class="social__item social__item_grey">
-							<i class="fab fa-instagram socal__item"></i>
-						</a>
-						<a href="#" class="social__item social__item_grey">
-							<i class="fab fa-pinterest socal__item"></i>
-						</a>
-						<a href="#" class="social__item social__item_grey">
-							<i class="fab fa-behance socal__item"></i>
-						</a>
+							<div class="social nav__social">
+								<a href="#" class="social__item social__item_grey">
+									<i class="fab fa-facebook-f socal__item"></i>
+								</a>
+								<a href="#" class="social__item social__item_grey">
+									<i class="fab fa-twitter socal__item"></i>
+								</a>
+								<a href="#" class="social__item social__item_grey">
+									<i class="fab fa-instagram socal__item"></i>
+								</a>
+								<a href="#" class="social__item social__item_grey">
+									<i class="fab fa-pinterest socal__item"></i>
+								</a>
+								<a href="#" class="social__item social__item_grey">
+									<i class="fab fa-behance socal__item"></i>
+								</a>
+							</div>
+						</nav>
 					</div>
-					</nav>
 					<button type="button" class="burger">
 						<div class="burger__item burger__item_light">Menu</div>
 					</button>
@@ -268,7 +271,7 @@
 		</section>
 
 		<div class="black-section">
-			<div id="owl-carousel-1" class="container owl-carousel quote-block">
+			<div class="container owl-carousel quote-block">
 				<blockquote class="quotes carousel-item">
 					<p class="quotes__content">“ Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.”</p>
 					<cite class="quotes__author">Michael Hopkins</cite>
@@ -287,21 +290,30 @@
 		</div>
 		
 		<div class="container">
-			<div class="partner">
-				<div class="partner__item">
+			<div class="partner owl-carousel">
+				<div class="partner__item carousel-item">
 					<img class="partner__img" src="assets/images/partner/partner-1.png" alt="">
 				</div>
-				<div class="partner__item">
+				<div class="partner__item carousel-item">
 					<img class="partner__img" src="assets/images/partner/partner-2.png" alt="">
 				</div>
-				<div class="partner__item">
+				<div class="partner__item carousel-item">
 					<img class="partner__img" src="assets/images/partner/partner-3.png" alt="">
 				</div>
-				<div class="partner__item">
+				<div class="partner__item carousel-item">
 					<img class="partner__img" src="assets/images/partner/partner-4.png" alt="">
 				</div>
-				<div class="partner__item">
+				<div class="partner__item carousel-item">
 					<img class="partner__img" src="assets/images/partner/partner-5.png" alt="">
+				</div>
+				<div class="partner__item carousel-item">
+					<img class="partner__img" src="assets/images/partner/partner-6.png" alt="">
+				</div>
+				<div class="partner__item carousel-item">
+					<img class="partner__img" src="assets/images/partner/partner-7.png" alt="">
+				</div>
+				<div class="partner__item carousel-item">
+					<img class="partner__img" src="assets/images/partner/partner-8.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -311,8 +323,8 @@
 				<h2 class="section__title">Latest Blog</h2>
 				<div class="section__text">Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus. Vestibulum gravida volutpat ipsum non ultrices.</div>
 				
-				<div class="blog">
-					<div class="blog__item">
+				<div class="blog owl-carousel">
+					<div class="blog__item carousel-item">
 						<div class="blog__header">
 							<a href="#">
 								<img class="blog__img" src="assets/images/blog/post-1.jpg" alt="">
@@ -327,7 +339,7 @@
 						</div>
 					</div>
 
-					<div class="blog__item">
+					<div class="blog__item carousel-item">
 						<div class="blog__header">
 							<a href="#">
 								<img class="blog__img" src="assets/images/blog/post-2.jpg" alt="">
@@ -342,7 +354,7 @@
 						</div>
 					</div>
 
-					<div class="blog__item">
+					<div class="blog__item carousel-item">
 						<div class="blog__header">
 							<a href="#">
 								<img class="blog__img" src="assets/images/blog/post-3.jpg" alt="">
@@ -354,6 +366,36 @@
 							<h3 class="blog__title"><a href="#">Why you should Always First</a></h3>
 							<div class="blog__date">june 01, 2016</div>
 							<p class="blog__text">Mauris sed odio tincidunt, volutpat augue, commodo dui. Phasellus hendrerit condi ntum vehicula.</p>
+						</div>
+					</div>
+
+					<div class="blog__item carousel-item">
+						<div class="blog__header">
+							<a href="#">
+								<img class="blog__img" src="assets/images/blog/post-4.jpg" alt="">
+							</a>
+							<a href="#" class="blog__theme">Design</a>
+						</div>
+
+						<div class="blog__content">
+							<h3 class="blog__title"><a href="#">Ten things about Photography</a></h3>
+							<div class="blog__date">august 14, 2016</div>
+							<p class="blog__text">Be forth, god for rule face abundantly all our two winged made. Is whose morning female.</p>
+						</div>
+					</div>
+
+					<div class="blog__item carousel-item">
+						<div class="blog__header">
+							<a href="#">
+								<img class="blog__img" src="assets/images/blog/post-5.jpg" alt="">
+							</a>
+							<a href="#" class="blog__theme">Nature</a>
+						</div>
+
+						<div class="blog__content">
+							<h3 class="blog__title"><a href="#">The History of Nature</a></h3>
+							<div class="blog__date">august 27, 2016</div>
+							<p class="blog__text">Third is fly. From one under in itself two waters, all own. Said male shall greater own grass.</p>
 						</div>
 					</div>
 				</div>  <!--Blog -->
