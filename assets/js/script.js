@@ -72,8 +72,6 @@ $(function() {
 		if ($(window).scrollTop() - blockOffset > 0) {
 			blockOffset = blockOffset - $('.header').height();
 		}
-		console.log($(window).scrollTop() - blockOffset);
-
 
 		if (scrollTime <500) {
 			scrollTime = 700;
@@ -153,13 +151,12 @@ $(function() {
 	})
 
 	window.addEventListener('resize', () => {
-		 		console.log($('.burger').css('display'));
 
   		let vh = window.innerHeight * 0.01;
  		document.documentElement.style.setProperty('--vh', `${vh}px`);
- 		if ($('.nav-expand').css('display') === 'none' && $('.burger').css('display') === 'none') {
+ 		if ($('.burger').css('display') === 'none') {
  			$('.nav-expand').css({display: 'block'});
- 		} else {
+ 		} else{
  			$('.nav-expand').css({display: 'none'});
  		}
 	});
